@@ -80,16 +80,24 @@
           class="grid overflow-hidden h-7 text-white font-medium text-sm text-center mt-4"
           style="grid-template-columns: {%proposal.votes.yes%}fr {%proposal.votes.no%}fr {%proposal.votes.abstain%}fr {%proposal.votes.nwv%}fr;"
         >
-          <div class="bg-green-500 inline-flex justify-center items-center">
+          <div
+            class="bg-green-500 text-xs inline-flex justify-center items-center"
+          >
             {%proposal.votes.yes%}%
           </div>
-          <div class="bg-red-500 inline-flex justify-center items-center">
+          <div
+            class="bg-red-500 text-xs inline-flex justify-center items-center"
+          >
             {%proposal.votes.no%}%
           </div>
-          <div class="bg-gray-500 inline-flex justify-center items-center">
+          <div
+            class="bg-gray-500 text-xs inline-flex justify-center items-center"
+          >
             {%proposal.votes.abstain%}%
           </div>
-          <div class="bg-purple-500 inline-flex justify-center items-center">
+          <div
+            class="bg-purple-500 text-xs inline-flex justify-center items-center"
+          >
             {%proposal.votes.nwv%}%
           </div>
         </div>
