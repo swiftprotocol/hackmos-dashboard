@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hackmos Dashboard
+
+A beautiful, fully responsive dashboard for managing user notifications, newsletters, and team settings. Built with Next.js and TailwindCSS.
+
+## Features
+
+- **Overview Dashboard**: Monitor key metrics including total users, notifications sent, newsletter conversion rates, and more
+- **User Management**: View and manage user authorizations and permissions
+- **Newsletter Stats**: Track engagement metrics like open rates and click-through rates
+- **Team Management**: Add and manage team members with role-based permissions
+- **Service Management**: Enable/disable services like Email, Push, SMS, and Data Storage
+- **Responsive Design**: Works seamlessly across desktop, tablet, and mobile devices
+- **Dark Mode Support**: Automatically adapts to system preferences
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ and npm
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+### Running the Dashboard
+
+Use the provided start script:
+
+```bash
+./start-dashboard.bat
+```
+
+Or run manually:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/app` - Next.js application pages
+  - `/dashboard` - Main dashboard pages
+  - `/dashboard/settings` - Settings page
+  - `/dashboard/users` - User management
+  - `/dashboard/newsletters` - Newsletter stats and management
+- `/components` - Reusable UI components
+  - `/app` - Application-specific components
+  - `/catalyst` - Core UI component library
+- `/contexts` - React context providers
+- `/public` - Static assets
+- `/util` - Utility functions
 
-## Learn More
+## Technologies
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js
+- React
+- TailwindCSS
+- TypeScript
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Troubleshooting
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+If you encounter a "'next' is not recognized" error, try reinstalling dependencies:
 
-## Deploy on Vercel
+```bash
+npm cache clean --force
+npm install --legacy-peer-deps
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
